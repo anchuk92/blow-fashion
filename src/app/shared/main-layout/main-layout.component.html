@@ -1,0 +1,13 @@
+<nav class="navbar bg-dark">
+  <a [routerLink]="['']"><img src="https://blowfashion.com.ua/wp-content/uploads/2018/01/logo-main-3-e1633971024805.png" alt="logo"></a>
+
+  <ul>
+    <li routerLinkActive="active">
+      <a [routerLink]="['']">Верхняя одежда</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/cart']">Корзина</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

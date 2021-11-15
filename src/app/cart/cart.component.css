@@ -1,0 +1,55 @@
+.cart-container {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#empty {
+  margin: 0 auto;
+}
+.cart-btn {
+  width: 200px;
+}
+.cart-container h3 {
+  margin: 30px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+table th {
+  color: white;
+  height: 1rem;
+  padding: 0.5rem;
+}
+
+td img {
+  width: 163px;
+  height: 218px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+}
+

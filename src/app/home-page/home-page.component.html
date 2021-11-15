@@ -1,0 +1,23 @@
+<div class="container">
+  <div>
+    <input type="text" placeholder="Поиск товара" [(ngModel)]="itemTitle">
+  </div>
+
+  <div class="products">
+    <div class="product" *ngFor="let item of items | search: itemTitle;">
+      <carousel
+        [images]="item.images"
+        [width]="297"
+        [height]="402"
+        [cellsToShow]="1"
+      >
+      </carousel>
+      <div class="small-info">
+        <p>{{item.title}}</p>
+        <p>{{item.price}} грн.</p>
+        <btn class="btn"><a [routerLink]="['/cart']" (click)="addItem(item)">Добавить в корзину</a></btn>
+
+      </div>
+    </div>
+  </div>
+</div>
